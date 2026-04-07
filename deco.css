@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+}
+.body{
+    background-color:black;
+    max-width:800px ;
+    margin: 0;
+    background: linear gradient(135deg,#6a11cb);
+    padding:50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.header{
+    margin-top: 10px;
+    margin-bottom: auto;
+    text-align: center;
+
+}
+.h1{
+    font-size: auto;
+    color: #6a11cb;
+    letter-spacing: 1px;
+
+}
+.main{
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    background-color:blue;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 15px 30px 
+    rgba(red, green, blue, alpha);
+
+}
+/*INPUTSECTION*/
+.shopping-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+.shopping-list button,
+.item-box button,
+#clearBtn{
+    border-radius: 8px;
+    border: none;
+    padding:9px 10px;
+    color: darkgray;
+    cursor: pointer;
+    font-weight: 100;
+
+}
+.shopping-list button::highlight,
+.item-box button::highlight,
+#clearBtn::highlight{
+    background: #6a11cb;
+    transform: translateY(-3px);
+
+}
+.clearBtn{
+    margin-top:15px;
+    display:none;
+    
+}
+.#shoppingList{
+    width: 100%;
+    margin-top: 15px;
+
+    display: grid;
+    grid-template-columns:repeat(2,
+    1fr);/*2 items per row*/
+    
+}
+.item-box{
+    padding:9px;
+    border-radius: 18px;
+    border:solid;
+    box-sizing: border-box;
+    box-shadow: inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+
+}
+.item-box:hover{
+    background-color: aliceblue;
+    box-shadow: 0 10px 25px
+    rgba(red, green, blue, alpha);
+    transform: translateY(-2px);
+
+}
+.item-text{ 
+    font-weight: bold;
+    margin-bottom: 8px;
+
+}
+.item-box input[type="checkbox"]{
+    cursor:pointer;
+    transform: scale(1.1);
+    margin-right: 5px;
+
+}
+.p{
+    font-size: small;
+    text-align: center;
+    justify-content: baseline;
+    
+}
+    
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="deco.css">
+</head>
+<body>
+    <div class ="body">
+        
+    </div>
+    <!-- header -->
+    <header>
+        <h1>INTERACTIVE SHOPPING LIST</h1>
+    </header>
+    <!-- main -->
+    <div class="main">
+<div class="shopping-list">
+    <!-- input section -->
+    <input type="text" id="itemInput" placeholder="Item name" required>
+    <input type="number" id="itemPrice" placeholder="Price" required>
+    <button id="addBtn">Add</button>
+</div>
+<!-- list container -->
+ <ul id="shoppingList"></ul>
+ <!-- clear button, hidden initially -->
+  <button id="clearBtn" style="display: none;">Clear list</button>
+
+<p> Total:  <span id="total">0</span></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+<div>
